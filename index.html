@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Will You Be My Valentine</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#FF3334',
+              secondary: '#FFBBC1',
+              dark: '#141414',
+            },
+            fontFamily: {
+              gravitas: ["'Gravitas One'", "cursive"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-gravitas">
+    <main class="bg-secondary min-h-screen flex flex-col items-center justify-center">
+      <h1 class="text-5xl text-primary mb-8 text-center px-4">Would you be my valentine?</h1>
+      
+      <div class="flex gap-4">
+        <button class="bg-primary hover:opacity-90 text-white px-8 py-2 rounded-full transition-all">
+          Yes
+        </button>
+        <button class="bg-white hover:bg-gray-100 text-dark px-8 py-2 rounded-full transition-all">
+          No
+        </button>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
